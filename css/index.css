@@ -1,0 +1,213 @@
+*{
+	box-sizing: border-box;
+ }
+
+	 body{
+		font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+		font-size: 16px;
+	}
+
+			 .principal {
+				background-color: #fff;
+				width: 800px;
+				height: 2000px;
+				margin: auto;
+				margin-top: 20px;
+				padding: 10px;
+			}
+
+			header{
+				background-color: #1c60ab;
+				width: 800px;
+				height: 150px;
+				color: #FFF;
+				margin-bottom: 1em;
+			}
+
+				.container{
+					width: 80%;
+					height: 100%;
+					margin: 0 auto;
+				}
+
+				#imgcabecalho{
+					height: 110px;
+					width: 200px;
+					margin-top: 20px;
+					margin-right: 10px;
+					float: left;
+
+					}
+
+					#imgcabecalho2{
+					height: 110px;
+					width: 200px;
+					margin-top: 20px;
+					margin-right: 10px;
+					float: right;
+					}
+
+			nav {
+				background-color: #1c60ab;
+				width: 800px;
+				height: 40px;
+				margin-top: 10px;
+				position: sticky;
+				top: 0;		
+			}
+
+				ul{
+					list-style: none;
+					padding-top: 8px;
+					padding-bottom: 8px;
+				}
+
+				li{
+					display: inline;
+				}
+
+				li a{	
+					text-decoration: none;
+					color: #fff;
+					padding: 8px 16px;
+					}
+
+				li a:hover{
+					background-color: #cceeff ;
+					color: #000;
+				}
+
+				li a.ativo{
+					background-color: #cceeff ;
+					color: #000;
+				}
+
+			section{
+				margin: 2em 0;
+				overflow: hidden;
+			}
+
+				section h3{
+					background-color: #1c60ab;
+					color: #fff;
+					padding: 8px 16px;
+					font-size: 2em;
+					display: block;
+					padding-bottom: .5em;
+					border-bottom: 1px solid #ccc;
+					margin-bottom: .5em;
+				}
+
+					p{
+						text-align: justify;
+						font-style: italic;
+						margin: auto;	
+					}
+
+				figure { 
+					  width: 70%;
+					  text-align: center;
+					  font-style: italic;
+					  font-size: smaller;
+					  text-indent: 0;
+					  border: thin silver solid;
+					  margin: auto;
+					  padding: 0.5em;
+					}
+
+					img.scaled {
+					  width: 100%;	
+					}
+
+				table{
+					width: 100%;
+					margin-bottom : .5em;
+				    table-layout: fixed;
+
+				}
+
+				td, th {
+					padding: .7em;
+					margin: 0;
+					border: 1px solid #ccc;
+					text-align: center;
+				}
+
+				th{
+					font-weight: bold;
+					background-color: #EEE;
+				}
+
+				label{
+					color: #555;
+					display: block;
+					margin-bottom: .2em;
+				}
+
+				.adicionar-pessoa{
+				    margin-top: 30px;
+				}
+
+				.grupo{
+					width: 32%;
+					display: inline-block;
+					padding: 10px 0px;
+				}
+
+
+				.campo{
+					margin: 0;
+					padding-bottom: 1em;
+					width: 100%;
+					border: 1px solid #ccc;
+					padding: .7em;
+					width: 100%;
+				}
+
+				.campo-medio{
+					display: inline-block;
+					padding-right: .5em;
+				}
+
+
+				button{
+					padding: .5em 2em;
+					border: 0;
+					border-bottom: 3px solid;
+					font-size: 1.2em;
+					cursor: pointer;
+					margin: 0;
+					margin-top: -3px;
+					color: #fff;
+					background-color:#0c8cd3;
+					border-color: #04324c;
+					width: 20%;
+				    display: block;
+				    clear: both;
+				    margin: 10px 0px;
+
+				}
+
+				button:active{
+					margin-top:0px;
+					border: 0;
+				}
+
+				button[disabled=disabled], button:disabled {
+				    background-color: gray;
+					border-color: darkgray;
+
+				}
+
+			footer {
+				background-color: #fff;
+				clear: both;
+				margin-top: 10px;
+				width: 800px;
+				height: 30px;
+				text-align: center;
+			}
+
+
+
+

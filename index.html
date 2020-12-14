@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title >Auxilio</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+		<div class="principal">
+
+			<header>
+				<div class="container">
+					<img id="imgcabecalho" src="img/auxilio.jpg" alt="foto">
+					<img id="imgcabecalho2" src="img/governo.jpg" alt="foto">
+				</div>
+			</header>
+			<main>
+				<nav>
+					<ul>
+						<li><a href="#inicio">Início</a></li>
+						<li><a href="#direito">Quem tem Direito</a></li>
+						<li><a href="#lista">Lista de Beneficiários</a></li>
+						<li><a href="#cadastro">Cadastrar Beneficiário</a></li>
+					</ul>
+				</nav>
+			
+				<section class="container">
+					<div id="inicio"><br><br><br>
+						<h3>Auxilio Emergencial</h3><br>
+							<p>Seja muito bem vindo a página do Auxilio Emergencial, vinculado a Caixa Economica Federal. O governo definiu que o benefício dura três meses ou até o fim da emergência do coronavírus no país. A validade do auxílio poderá ser prorrogada de acordo com a necessidade. O Beneficio será pago pela Caixa Econômica Federal nos meses de Abril, Maio e Junho</p><br><br>
+						<figure>
+							<img class=scaled  src="img/caixa.jpg" alt="Foto">
+							<figcaption>Fonte - Caixa Econômica Federal</figcaption>
+						</figure>
+					</div><br><br>
+					<div id="direito"><br><br><br>
+						<h3>Quem Tem Direito ao Beneficio?</h3><br>
+						<p>O benefício será pago a trabalhadores informais, desempregados, contribuintes individuais do INSS e MEIs. Será preciso se enquadrar a condições abaixo de requisito de renda média (renda mensal de até 3 salários mínimos por família) no valor de R$<strong class="SalMin">SalarioMinimo</strong> por familia.</p> <br><br>
+						<p>Caso sua renda seja maior que três salarios minimos seu beneficio será Negado automáticamente</p><br><br>
+						<figure>
+							<img class=scaled  src="img/auxilio2.jpg" alt="Foto">
+							<figcaption>Fonte-Caixa Econômica Federal</figcaption>
+						</figure>
+					</div><br><br>
+					<div id="lista"><br><br><br>
+						<h3>Listas Beneficiarios</h3><br>
+						<table>
+							<thead>
+								<tr>
+									<th>Nome</th>
+									<th>CPF</th>
+									<th>Nome da Mãe</th>
+									<th>Renda</th>
+									<th>Situação</th>
+								</tr>
+							</thead>
+							<tbody id="tabela-pessoa">
+								<tr class="pessoa" id="primeiro-pessoa" >
+									<td class="info-nome">Paulo</td>
+									<td class="info-cpf">10000000098</td>
+									<td class="info-mae">Maria</td>
+									<td class="info-renda">10000</td>
+									<td class="info-situacao">0</td>
+								</tr>
+
+								<tr class="pessoa" >
+									<td class="info-nome">João</td>
+									<td class="info-cpf">80000000087</td>
+									<td class="info-mae">Paula</td>
+									<td class="info-renda">400</td>
+									<td class="info-situacao">0</td>
+								</tr>
+
+								<tr class="pessoa" >
+									<td class="info-nome">Erica</td>
+									<td class="info-cpf">57777755543</td>
+									<td class="info-mae">Josefa</td>
+									<td class="info-renda">1400</td>
+									<td class="info-situacao">0</td>
+								</tr>
+
+								<tr class="pessoa">
+									<td class="info-nome">Douglas</td>
+									<td class="info-cpf">85345676532</td>
+									<td class="info-mae">Ana</td>
+									<td class="info-renda">24000</td>
+									<td class="info-situacao">0</td>
+								</tr>
+								<tr class="pessoa" >
+									<td class="info-nome">Tatiana</td>
+									<td class="info-cpf">46765432487</td>
+									<td class="info-mae">Roseli</td>
+									<td class="info-renda">4200</td>
+									<td class="info-situacao">0</td>
+								</tr>
+							</tbody>
+						</table>
+	                </div>
+				</section><br><br>
+			
+	        
+	        	<section class="container">
+	        		<div id="cadastro"><br><br><br>
+	            		<h3 id="titulo-form">Inserir Cadastro</h3><br>
+	            		<p>Preencha os Campos com seus dados para se cadastrar na lista e obter seu resultado.</p><br>
+						<form id="form-adiciona">
+	                		<div class="">
+	                    		<label for="nome">Nome:</label>
+	                    		<input id="nome" name="nome" type="text" placeholder="Digite seu nome" class="campo">
+	                		</div>
+	                		<div class="grupo">
+	                    		<label for="cpf">CPF:</label>
+	                    		<input id="cpf" name="cpf" type="text" placeholder="Digite o CPF" class="campo campo-medio">
+	                		</div>
+	                		<div class="grupo">
+	                    		<label for="mae">Nome da Mãe:</label>
+	                    		<input id="mae" name="mae" type="text" placeholder="Digite o nome da sua mãe" class="campo medio">
+	                		</div>
+	                		<div class="grupo">
+	                    		<label for="renda">Renda:</label>
+	                    		<input id="renda" name="renda" type="text" placeholder="Digite sua renda" class="campo campo-medio">
+	                		</div>
+	                    	<button id="adicionar-pessoa" class="botao bto-principal">Adicionar</button>
+	            		</form>
+	        		</div>
+	        	</section>
+			</main>        
+	        <footer>&copy;DAVID AUGUSTO 2020. TODOS OS DIREITOS RESERVADOS.</footer>
+    	</div>
+    <script src="js/calculasituacao.js"></script>
+    <script src="js/form.js"></script>
+	</body>
+</html>
